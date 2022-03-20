@@ -25,7 +25,7 @@ I found only one way to have access to the system of equations. This was the `de
 
 As next I created an interface between `derivatives!` and a solver from `NLsolve`.
 
-** file `GENinit01.start.jl`**
+**file `GENinit01.start.jl`**
 
 In the `EIN` section the input values (with start) can be found. In addition I defined parameters as input (in the example applied torque and voltage set-point for exciter)
 
@@ -44,8 +44,7 @@ EIN = (
     ("synUnit.exciter.PI1f.x", 0.0), 
     ("synUnit.exciter.PT1a.Integr.x", 0.0),
     (:VEXC, 1.01),
-    (:LOAD, 0.5),
-)
+    (:LOAD, 0.5)   )
 
 AUS = (
 #     ("der(transformer.X.ix)", [0.0, 0.0]),
@@ -60,17 +59,14 @@ AUS = (
     ("meterGEN.powerRe", 0.8),
     ("meterGEN.powerIm", 0.3),
     ("transformer.X.derINI1", 0.0),
-    ("transformer.X.derINI2", 0.0),
-
-)
-
+    ("transformer.X.derINI2", 0.0), )
 ```
 
 
 ## Examples
 The simple example includes the following elements:
 
-* Voltage source
+* variable Voltage source
 * Transformer
 * Synchronous machine (NON saturated)
 * Exciter (IEEE ST8A model)
@@ -94,7 +90,7 @@ For a time period of `150ms` the grid voltage is reduced to zero.
 
 
 
-### Run the example
+### Run the Example
 
 **create & instantiate the model**: run `myGenerator2.jl`
 
