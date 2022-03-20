@@ -1,0 +1,34 @@
+description:
+  type: GENERATORdata
+NONsat:
+  KIS: 0.0
+  S10: 0.0001
+  S12: 0.0002
+  r1d: 0.0171
+  r1q: 0.011
+  ra: 0.0024
+  rfd: 0.00037
+  x1d: 0.2981
+  x1q: 0.1165
+  xd: 1.186
+  xf1d: 0.0011
+  xfd: 0.2181
+  xl: 0.1165
+  xq: 0.699
+  Project: GENERATOR nonsat
+SATurated:
+  KIS: 0.15
+  S10: 0.18858668
+  S12: 0.43618116
+  r1d: 0.0171
+  r1q: 0.011
+  ra: 0.0024
+  rfd: 0.00037
+  x1d: 0.2981
+  x1q: 0.1165
+  xd: 1.186
+  xf1d: 0.0011
+  xfd: 0.2181
+  xl: 0.1165
+  xq: 0.699
+  Project: GENERATOR saturated

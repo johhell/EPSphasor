@@ -1,0 +1,14 @@
+description:
+  type: ZONEdata
+set132:
+  NoPolepairs: 8
+  Srated: 100.0e6
+  Vrated: 132.0e3
+  frated: 50.0
+  Project: gridconnection 132kV
+setGEN:
+  NoPolepairs: 8
+  Srated: 119.0e6
+  Vrated: 15750.0
+  frated: 50.0
+  Project: unit 119MVA

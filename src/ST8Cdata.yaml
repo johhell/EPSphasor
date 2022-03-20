@@ -1,0 +1,62 @@
+description:
+  type: EXCITER ST8C dataset
+TEST:
+  Ka: 1.0
+  Kf: 0.452
+  Kia: 0.0
+  Kir: 14.29
+  Kp: 6.3
+  Kpa: 4.0
+  Kpr: 10.9
+  SW1: false
+  TR: 0.0226
+  Ta: 0.0033
+  Tf: 0.005
+  Thetap: 0.0
+  VAmax: 0.996
+  VAmin: -0.866
+  VPImax: 1.8
+  VPImin: 0.0
+  VRmax: 0.966
+  VRmin: -0.866
+  Project: Glendoe GEN
+TESTSW1:
+  Ka: 1.0
+  Kf: 0.452
+  Kia: 0.0
+  Kir: 14.29
+  Kp: 6.3
+  Kpa: 4.0
+  Kpr: 10.9
+  SW1: true
+  TR: 0.0226
+  Ta: 0.0033
+  Tf: 0.005
+  Thetap: 0.0
+  VAmax: 0.996
+  VAmin: -0.866
+  VPImax: 1.8
+  VPImin: 0.0
+  VRmax: 0.966
+  VRmin: -0.866
+  Project: ST8C SW1=1
+TESTSW0:
+  Ka: 1.0
+  Kf: 0.452
+  Kia: 0.0
+  Kir: 14.29
+  Kp: 6.3
+  Kpa: 4.0
+  Kpr: 10.9
+  SW1: false
+  TR: 0.0226
+  Ta: 0.0033
+  Tf: 0.005
+  Thetap: 0.0
+  VAmax: 0.996
+  VAmin: -0.866
+  VPImax: 1.8
+  VPImin: 0.0
+  VRmax: 0.966
+  VRmin: -0.866
+  Project: ST8C SW1=0
