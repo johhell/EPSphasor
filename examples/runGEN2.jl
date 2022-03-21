@@ -7,8 +7,8 @@ using StaticArrays
 
 
 
-include("Utils.jl")
-include("SIM8.jl")
+include("../src/Utils.jl")
+include("../src/SIM8.jl")
 
 
 # logData = true

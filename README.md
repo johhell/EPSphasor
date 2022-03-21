@@ -69,7 +69,7 @@ The simple example includes the following elements:
 * variable Voltage source
 * Transformer
 * Synchronous machine (NON saturated)
-* Exciter (IEEE ST8A model)
+* Exciter (IEEE ST8C model)
 * Inertia
 
 For the speed of the reference frame practically 3 options are possible:
@@ -90,7 +90,7 @@ For a time period of `150ms` the grid voltage is reduced to zero.
 
 
 
-### Run the Example
+### Run the Example (folder `/examples/`)
 
 **create & instantiate the model**: run `myGenerator2.jl`
 

@@ -6,9 +6,9 @@ using Modia
 setLogMerge(false)
 
 
-include("ModelMechanic.jl")
-include("ModelEPSphasor.jl")
-include("ModelController.jl")
+include("../src/ModelMechanic.jl")
+include("../src/ModelEPSphasor.jl")
+include("../src/ModelController.jl")
 
 
 ##################################

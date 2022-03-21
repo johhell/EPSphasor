@@ -107,7 +107,7 @@ end
 startValue = Vector{Float64}()
 inputIndex = Vector{Any}()
 
-logINITvalues = false
+logINITvalues = true
 
 function report(txt::String, color::Symbol)
     if logINITvalues
