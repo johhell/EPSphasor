@@ -79,6 +79,9 @@ OnePin = Model(
     p = PinVector,
     Omegarated=outer,
     wReference=outer,
+    amps = Var(start=SVector{2}(0.0, 0.02)),
+    volts = Var(start=SVector{2}(1.0, 0.01)),
+    
     equations = :[
         volts = p.v
         amps = p.i
@@ -341,6 +344,43 @@ SynchronousMachineNONsat = SynchrPart | Model(
 
 
 
+
+InductionPart = MachinePart | Model(
+    Omegarated=Var(_outer=true, _inner=true),
+    wReference=Var(_outer=true, _inner=true),
+    x1s = 0.1708,
+    x2s = 0.1216,
+    xh = 3.2,
+    r1 = 0.0139,
+    r2 = 0.0117,
+    Psi1 = Var(start=SVector{2}(0.0, -1.0)),
+    Psi2 = Var(start=SVector{2}(0.3, -0.9)),
+    Psim = Var(start=SVector{2}(0.2, -0.9)),
+    imagn = Var(start=SVector{2}(0.0,  0.3)),
+
+    equations = :[
+        i1 = amps
+        u1 = volts
+        imagn = i1 + i2
+        # flux
+        Psim  = xh * imagn
+        Psi1 = x1s * i1 + Psim
+        Psi2 = Psim + x2s * i2
+        # voltages
+        u1 = r1*i1 + der(Psi1)/Omegarated  + wReference*EPSphasor.MultiJ(Psi1)
+        u2 = r2*i2 + der(Psi2)/Omegarated  + (wReference-w)*EPSphasor.MultiJ(Psi2)
+        # torque
+        tau = -i1[2]*Psi1[1] + i1[1]*Psi1[2]
+    ]
+)
+
+
+InductionMachine = InductionPart | Model(
+
+    equations = :[
+        u2 = [0.0, 0.0]
+    ]
+)
 
 
 #########################################
